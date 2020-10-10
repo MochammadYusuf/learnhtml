@@ -1,21 +1,116 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Learn HTML</title>
+	<link rel="icon"href="https://cdn3.f-cdn.com/contestentries/1376995/30494909/5b566bc71d308_thumb900.jpg">
+	<title>Learn Web</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"></link>
+	<style type="text/css">
+		body {
+			background-color: #183d5d;
+		}
+		.navbar {
+			background-color: #010e28;
+		}
+		.navbar a {
+			font-size: 25px;
+			color: #9c4668;
+			font-weight: bolder;
+		}
+		#shadowText {
+			text-shadow: 2px 0px whitesmoke;
+		}
+		img {
+			width: 25%;
+		}
+		#text {
+			font-size: 20px;
+			font-weight: bold;
+			color: whitesmoke;
+		}
+		.jumbotron {
+			margin-bottom: 0px;
+			background-color: #93c2db;
+			color: #072540;
+			font-size: 20px;
+			font-weight: bold;
+		}
+	</style>
 </head>
 <body>
-	<h1>Judul Utama</h1>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-	<h3>Tag "b" untuk mebebalkan tulisan</h3>
-	<p><b>Tulisan Tebal</b></p>
-	<h3>Tag "i" untuk memiringkan tulisan</h3>
-	<p><i>Tulisan miring</i></p>
-	<h3>Tag "u" untuk memberi garis bawah pada tulisan</h3>
-	<p><u>Tulisan bergaris bawah</u></p>
+
+	<!-- navbar -->
+	<nav class="navbar sticky-top navbar-expand-lg shadow">
+		<div class="container">
+			<a class="navbar-brand scroll" href="#"><span id="shadowText">L</span>earning</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+				<div class="navbar-nav">
+					<a class="nav-item nav-link navbar-right scroll" href="#about">About<span class="sr-only">(current)</span></a>
+					<a class="nav-item nav-link navbar-right scroll" href="#contact">Contact</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<!-- About -->
+	<div class="container" id="about">
+		<div class="row mt-5">
+			<div class="col-md-12 text-center">
+				<img class="img img-thumbnail rounded-circle shadow" src="https://cdn3.f-cdn.com/contestentries/1376995/30494909/5b566bc71d308_thumb900.jpg">
+			</div>
+			<div class="col-md-12 text-center mt-3" style="color: whitesmoke">
+				<h1 class="text-center"><b>About</b></h1>
+			</div>
+		</div>
+		<div class="row text-justify mt-3 mb-3">
+			<div class="col-md-6" id="text">
+				<p>Lorem ipsum carrots, enhanced rebates, but they do occaecat labor and in pain, and vitality, so that at some important things to. Over the years, I will come, aliquip out of her the advantage of exercise, so that stimulus efforts if the school district who has nostrud products. Duis has been criticized in the pleasure of the want to be a pain in the cupidatat cillum produces no resultant et dolore magna flee. Excepteur blinds are not cupidatat excepteur are to blame for those services that is soft minds to abandon efforts.</p>
+			</div>
+			<div class="col-md-6" id="text">
+				<p>Lorem ipsum carrots, enhanced rebates, but they do occaecat labor and in pain, and vitality, so that at some important things to. Over the years, I will come, aliquip out of her the advantage of exercise, so that stimulus efforts if the school district who has nostrud products. Duis has been criticized in the pleasure of the want to be a pain in the cupidatat cillum produces no resultant et dolore magna flee. Excepteur blinds are not cupidatat excepteur are to blame for those services that is soft minds to abandon efforts.</p>
+			</div>
+		</div>
+	</div>
+	
+	<!-- contact -->
+	<div class="jumbotron jumbotron-fluid" id="contact">
+		<div class="container">
+			<div class="col-md-12 mb-3">
+				<h1 class="text-center"><b>Contact</b></h1>
+			</div>
+			<form>
+			  <div class="form-row">
+			    <div class="form-group col-md-6">
+			      <label for="inputEmail4">Email</label>
+			      <input type="email" class="form-control" id="inputEmail4">
+			    </div>
+			    <div class="form-group col-md-6">
+			      <label for="inputPassword4">Password</label>
+			      <input type="password" class="form-control" id="inputPassword4">
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <label for="inputAddress">Address</label>
+			    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+			  </div>
+			  <div class="form-group">
+			    <label for="inputAddress2">Comment</label>
+			    <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+			  </div>
+			  <div class="form-group">
+			    <div class="form-check">
+			      <input class="form-check-input" type="checkbox" id="gridCheck">
+			      <label class="form-check-label" for="gridCheck">
+			        Check me out
+			      </label>
+			    </div>
+			  </div>
+			  <button type="submit" class="btn btn-primary">Submit</button>
+			</form>
+		</div>
+	</div>
+
 </body>
 </html>
